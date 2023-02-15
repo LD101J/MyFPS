@@ -17571,9 +17571,10 @@ GameObject:
   - component: {fileID: 5068931212859814701}
   - component: {fileID: 5068931212859814698}
   - component: {fileID: 5068931212859814699}
+  - component: {fileID: 1891513389}
   m_Layer: 0
   m_Name: Teros
-  m_TagString: Player
+  m_TagString: Teros
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17676,8 +17677,9 @@ MonoBehaviour:
   horizontalMovement: 5
   verticalMovement: 5
   mouseYInput: 0
-  minValue: -100
-  maxValue: 100
+  mouseXInput: 0
+  minValue: -90
+  maxValue: 90
 --- !u!114 &5068931212859814701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17732,6 +17734,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+--- !u!114 &1891513389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5068931212859814708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddc4abc6700853439f1e532f9e4e202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCoins: 0
 --- !u!1 &5068931212928160585
 GameObject:
   m_ObjectHideFlags: 0

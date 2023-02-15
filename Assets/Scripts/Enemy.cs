@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] protected float hitPoints = 100f;
-    [SerializeField] protected float moveSpeed = 20f;
-    [SerializeField] protected float coinCount = 10;
+    //Parent enemy class
+    //all enemies will have hitpoints,damage, coins that they drop, health, movespeed
+    // they all have sprites & animations, they all have states
+    #region Variables for all enemies
+    [SerializeField] protected float hitPoints;
+    [SerializeField] protected float damage;
+    [SerializeField] protected float moveSpeed;
+    [SerializeField] protected float health;
+    [SerializeField] protected bool isAttacking;
+    [SerializeField] protected float coinDropCount;
     [SerializeField] protected GameObject coinPrefab;
     [SerializeField] protected Animator animator;
     [SerializeField] protected GameObject enemyModel;
+    #endregion
+    private void Start()
+    {
+
+        AttackPlayer();
+    }
+
     protected virtual void AttackPlayer()
     {
 
@@ -18,9 +32,5 @@ public class Enemy : MonoBehaviour
     {
 
     }
-    private void Start()
-    {
-        
-        AttackPlayer();
-    }
 }
+   

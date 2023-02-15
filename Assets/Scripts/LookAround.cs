@@ -13,6 +13,7 @@ public class LookAround : MonoBehaviour
     [SerializeField] private float verticalMovement;
     //clamping
     [SerializeField] private float mouseYInput;
+    [SerializeField] private float mouseXInput;
     [SerializeField] private int minValue;
     [SerializeField] private int maxValue;
 
@@ -22,6 +23,7 @@ public class LookAround : MonoBehaviour
         horizontalMovement = (Input.GetAxis("Mouse X") * lookSpeed);
         mouseYInput -= (Input.GetAxis("Mouse Y") * lookSpeed);
         mouseYInput = Mathf.Clamp(mouseYInput, minValue, maxValue);
+        mouseXInput = Mathf.Clamp(mouseXInput, minValue, maxValue);
         
         transform.Rotate(0, horizontalMovement, 0);
         mainCamera.transform.rotation = Quaternion.Euler(mouseYInput, mainCamera.transform.rotation.eulerAngles.y, 0f); 

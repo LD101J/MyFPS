@@ -123,25 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &114153702 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5331641792076664113, guid: a48811bd80cfc3e41b959bf54d18ea37,
-    type: 3}
-  m_PrefabInstance: {fileID: 5331641791979886039}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &114153707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114153702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5f64cf5bb92c2459d9101abd0cbbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 200
 --- !u!4 &114153711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5331641792076664125, guid: a48811bd80cfc3e41b959bf54d18ea37,
@@ -2404,19 +2385,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 585908405}
     m_Modifications:
-    - target: {fileID: 5331641792076664112, guid: a48811bd80cfc3e41b959bf54d18ea37,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5331641792076664113, guid: a48811bd80cfc3e41b959bf54d18ea37,
         type: 3}
       propertyPath: m_Name
-      value: Coin
-      objectReference: {fileID: 0}
-    - target: {fileID: 5331641792076664113, guid: a48811bd80cfc3e41b959bf54d18ea37,
-        type: 3}
-      propertyPath: m_TagString
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 5331641792076664125, guid: a48811bd80cfc3e41b959bf54d18ea37,

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PointManager : MonoBehaviour
 {
-    [SerializeField] private int points = 0;
+    [SerializeField] protected int points;
 
     //private void OnGUI()
     //{
