@@ -17,7 +17,12 @@ public class LookAround : MonoBehaviour
     [SerializeField] private int minValue;
     [SerializeField] private int maxValue;
 
-   
+    #region MyCode
+    private void Start()
+    {
+        //hide mouse cursor
+    }
+    #endregion
     private void Update()
     {
         horizontalMovement = (Input.GetAxis("Mouse X") * lookSpeed);

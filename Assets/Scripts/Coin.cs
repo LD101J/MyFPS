@@ -1,28 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Coin : MonoBehaviour
+namespace Jude.MyFPS
 {
-    [SerializeField] private float rotateSpeed;
-    [SerializeField] protected short  points;
-
-    
-    private void Update()
+    public class Coin : MonoBehaviour
     {
-        transform.Rotate(0 ,0, rotateSpeed * Time.deltaTime);
-    }
+        [SerializeField] private float rotateSpeed;
+        [SerializeField] protected short points;
+        //[SerializeField] private ui  points;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Teros")
+
+        private void Update()
         {
-            other.GetComponent<PlayerInventory>().AddCoins(points);
-            PickCoin();
+            transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Teros")
+            {
+                other.GetComponent<PlayerInventory>().AddCoins(points);
+                PickCoin();
+            }
+        }
+        public void PickCoin()
+        {
+            Destroy(gameObject);
         }
     }
-    public void PickCoin()
-    {
-        Destroy(gameObject);
-    }
+
 }
